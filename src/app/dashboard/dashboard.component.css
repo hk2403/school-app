@@ -1,0 +1,31 @@
+.parent{
+    width: 100%;
+    display: flex;
+}
+.left{
+    width: 22%;
+    height: 100vh;
+    background-color: blueviolet;
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+.left>h4:hover{
+    background-color: white;
+    color: blueviolet;
+    cursor: pointer;
+
+}
+.right{
+    width: 78%;
+    background-color: rgb(99, 78, 220,0.3);
+}
+h4{
+    font-size: 27px;
+}
+.lgt{
+    width: 80%;
+    height: 50px;
+    font-size: 22px;
+}
