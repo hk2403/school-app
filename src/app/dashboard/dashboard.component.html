@@ -3,10 +3,10 @@
         <h2>Dashboard</h2>
         <hr>
         <h4 routerLink="home"><img style="margin-top: -6px;" width="24" height="24" src="assets/icons8-home-page-32.png" alt="home-page"/> Home</h4>
-        <h4><img style="margin-top: -6px;" width="24" height="24" src="assets/icons8-create-26.png" alt="create-new"/> Create Student</h4>
-        <h4><img style="margin-top: -6px;" width="24" height="24" src="assets/icons8-queue-24.png" alt="create-new"/>All Students</h4>
+        <h4 routerLink="createStudent"><img style="margin-top: -6px;" width="24" height="24" src="assets/icons8-create-26.png" alt="create-new"/> Create Student</h4>
+        <h4 routerLink="allStudents"><img style="margin-top: -6px;" width="24" height="24" src="assets/icons8-queue-24.png" alt="create-new"/>All Students</h4>
         <hr>
-        <button  class="btn btn-warning lgt">Logout</button>
+        <button  class="btn btn-warning lgt" (click)="logout()">Logout</button>
 
     </div>
     <div class="right">

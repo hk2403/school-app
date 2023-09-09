@@ -8,6 +8,17 @@
 body{
     font-family: 'Exo', sans-serif;
 }
+.copyright{
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 140px;
+    color: #f7c978;
+    
+}
 
 
 .context {
@@ -15,7 +26,7 @@ body{
     position: absolute;
     top:30%;
     display: flex;
-   justify-content: center;
+    justify-content: center;
    
     
 }
