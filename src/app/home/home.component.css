@@ -1,0 +1,54 @@
+.parent{
+    height: 100%;
+}
+.top{
+    display: flex;
+    justify-content: space-evenly;
+    height: 35%;
+    width: 100%;
+    padding-top: 50px;
+}
+.card-1, .card-2, .card-3{
+    height: 95%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgb(84, 32, 124,0.7);
+}
+
+.middle{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 100%;
+    padding-top: 20px;
+}
+.card-4, .card-5{
+    height: 95%;
+    width: 46.5%;
+    border-radius: 10px;
+    background-color: rgba(124, 32, 99, 0.7);
+}
+
+.bottom{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.card-6{
+    background-color: rgba(23, 84, 99, 0.7);
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+}
+.q-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    padding: 20px;
+    overflow: auto;
+    color: white;
+}
