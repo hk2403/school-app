@@ -1,70 +1,78 @@
 <div class="parent">
-    <form>
+    <form [formGroup]="studentForm">
         <div class="heading">
             <h2>Create Student</h2>
         </div>
         <div class="mb-3 mt-3">
             <label class="form-label">Name:</label>
-            <input class="form-control" type="text" placeholder="Enter Name">
+            <input class="form-control" type="text" formControlName="name" placeholder="Enter Name">
         </div>
         <div class="mb-3 mt-3">
             <label class="form-label">Father Name:</label>
-            <input class="form-control" type="text" placeholder="Enter Father Name">
+            <input class="form-control" type="text" formControlName="fatherName" placeholder="Enter Father Name">
         </div>
         <div class="mb-3 mt-3">
             <label>Gender: &nbsp;</label>
-            <input type="radio" class="form-check-input" id="male" name="gender" value="male"> <label for="male"> &nbsp;
+            <input type="radio" class="form-check-input" formControlName="gender" id="male" name="gender" value="male"> <label for="male"> &nbsp;
                 Male &nbsp; &nbsp; </label>
-            <input type="radio" class="form-check-input" id="female" name="gender" value="female"> <label for="female">
+            <input type="radio" class="form-check-input" formControlName="gender" id="female" name="gender" value="female"> <label for="female">
                 &nbsp; Female</label>
         </div>
         <div class="mb-3 mt-3">
             <label class="form-label">Email:</label>
-            <input class="form-control" type="email" placeholder="Enter Email">
+            <input class="form-control" type="email" formControlName="email" placeholder="Enter Email">
         </div>
         <div class="mb-3 mt-3">
             <label class="form-label">Date of Birth:</label>
-            <input class="form-control" type="date">
+            <input class="form-control" type="date" formControlName="dob">
         </div>
-        <div class="row">
+        <div class="row" formGroupName="address">
             <label class="form-label">Address:</label>
             <div class="col-lg-6 col-sm-12 m-top">
-                <input type="type" class="form-control" placeholder="Address Line">
+                <input type="text" class="form-control" placeholder="Address Line" formControlName="addressLine">
             </div>
             <div class="col-lg-6 col-sm-12 m-top">
-                <input type="type" class="form-control" placeholder="City">
+                <input type="text" class="form-control" placeholder="City" formControlName="city">
             </div>
             
             <div class="col-lg-6 col-sm-12 m-top">
-                <input type="type" class="form-control" placeholder="State">
+                <input type="text" class="form-control" placeholder="State" formControlName="state">
             </div>
             <div class="col-lg-6 col-sm-12 m-top">
-                <input type="type" class="form-control" placeholder="PINCODE">
+                <input type="number" class="form-control" placeholder="Pincode" formControlName="pincode">
             </div>
         </div>
         <div class="row">
             <label class="form-label">Enter Class & Percentage:</label>
             <div class="col">
-                <input type="number" class="form-control" placeholder="Class">
+                <input type="number" class="form-control" placeholder="Class" formControlName="class">
             </div>
             <div class="col input-group">
-                <input type="number" class="form-control" placeholder="Percentage">
+                <input type="number" class="form-control" placeholder="Percentage" formControlName="percentage">
                 <span class="input-group-text">%</span>
             </div>
         </div>
         <div class="mb-3 mt-3">
             <label>Type: &nbsp;</label>
-            <input type="radio" class="form-check-input" id="day" name="type" value="dayScholor"> <label for="day"> &nbsp;
+            <input type="radio" class="form-check-input" id="day" formControlName="type" name="type" value="dayScholor"> <label for="day"> &nbsp;
                 Day Scholar &nbsp; &nbsp; </label>
-            <input type="radio" class="form-check-input" id="res" name="type" value="residential"> <label for="res">
+            <input type="radio" class="form-check-input" id="res" formControlName="type" name="type" value="residential"> <label for="res">
                 &nbsp; Residential </label>
+        </div>
+        <div class="mb-3 mt-3" *ngIf="studentForm.get('type')?.value=='dayScholor'">
+            <label class="form-label">Bus Fee:</label>
+            <input class="form-control" type="number" formControlName="name" placeholder="Enter Bus Fee" formControlName="busFee">
+        </div>
+        <div class="mb-3 mt-3" *ngIf="studentForm.get('type')?.value=='residential'">
+            <label class="form-label">Hostel Fee:</label>
+            <input class="form-control" type="number" formControlName="name" placeholder="Enter Hostel Fee" formControlName="hostelFee">
         </div>
         <div class="mb-3 mt-3">
             <label for="comment">Conduct:</label>
-            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            <textarea class="form-control" formControlName="conduct" rows="4" id="comment" name="text"></textarea>
         </div>
         <div class="but">
-            <button class="btn btn-primary">Create</button>
+            <button class="btn btn-primary" (click)="create()">Create</button>
         </div>
 
     </form>
