@@ -1,0 +1,31 @@
+@media screen and (min-width:572px) {
+    .parent {
+        width: min(1200px, 95%);
+        border: 2px solid rgb(43, 162, 226);
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: rgba(120, 49, 242, 0.2);
+        color: black;
+    }
+
+}
+
+@media screen and (max-width:572px) {
+    .parent {
+        width: min(1200px, 95%);
+        border: 2px solid rgb(43, 162, 226);
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(120, 49, 242, 0.2);
+        color: black;
+    }
+
+}
+
+.tbl {
+    text-align: center;
+}
