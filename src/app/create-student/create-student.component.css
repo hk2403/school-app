@@ -1,0 +1,24 @@
+.parent{
+    width: min(600px,90%);
+    border: 2px solid rgb(174, 226, 43);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(185, 76, 236,0.9);
+    color: white;
+}
+.heading{
+    text-align: center;
+}
+.form{
+    width: 100%;
+}
+.but{
+    text-align: center;
+}
+.m-top{
+   margin-top: 5px;
+   margin-bottom: 5px; 
+}

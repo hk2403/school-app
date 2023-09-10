@@ -1,1 +1,72 @@
-<p>create-student works!</p>
+<div class="parent">
+    <form>
+        <div class="heading">
+            <h2>Create Student</h2>
+        </div>
+        <div class="mb-3 mt-3">
+            <label class="form-label">Name:</label>
+            <input class="form-control" type="text" placeholder="Enter Name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label class="form-label">Father Name:</label>
+            <input class="form-control" type="text" placeholder="Enter Father Name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label>Gender: &nbsp;</label>
+            <input type="radio" class="form-check-input" id="male" name="gender" value="male"> <label for="male"> &nbsp;
+                Male &nbsp; &nbsp; </label>
+            <input type="radio" class="form-check-input" id="female" name="gender" value="female"> <label for="female">
+                &nbsp; Female</label>
+        </div>
+        <div class="mb-3 mt-3">
+            <label class="form-label">Email:</label>
+            <input class="form-control" type="email" placeholder="Enter Email">
+        </div>
+        <div class="mb-3 mt-3">
+            <label class="form-label">Date of Birth:</label>
+            <input class="form-control" type="date">
+        </div>
+        <div class="row">
+            <label class="form-label">Address:</label>
+            <div class="col-lg-6 col-sm-12 m-top">
+                <input type="type" class="form-control" placeholder="Address Line">
+            </div>
+            <div class="col-lg-6 col-sm-12 m-top">
+                <input type="type" class="form-control" placeholder="City">
+            </div>
+            
+            <div class="col-lg-6 col-sm-12 m-top">
+                <input type="type" class="form-control" placeholder="State">
+            </div>
+            <div class="col-lg-6 col-sm-12 m-top">
+                <input type="type" class="form-control" placeholder="PINCODE">
+            </div>
+        </div>
+        <div class="row">
+            <label class="form-label">Enter Class & Percentage:</label>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Class">
+            </div>
+            <div class="col input-group">
+                <input type="number" class="form-control" placeholder="Percentage">
+                <span class="input-group-text">%</span>
+            </div>
+        </div>
+        <div class="mb-3 mt-3">
+            <label>Type: &nbsp;</label>
+            <input type="radio" class="form-check-input" id="day" name="type" value="dayScholor"> <label for="day"> &nbsp;
+                Day Scholar &nbsp; &nbsp; </label>
+            <input type="radio" class="form-check-input" id="res" name="type" value="residential"> <label for="res">
+                &nbsp; Residential </label>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="comment">Conduct:</label>
+            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </div>
+        <div class="but">
+            <button class="btn btn-primary">Create</button>
+        </div>
+
+    </form>
+
+</div>
