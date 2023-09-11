@@ -29,3 +29,20 @@
 .tbl {
     text-align: center;
 }
+.actions{
+    padding: 12px;
+}
+.act{
+    padding-bottom: 20px;
+    width: 100%;
+}
+.ff{
+    display: flex;
+    justify-content: space-between;
+}
+.mm{
+    margin-bottom: 10px;
+}
+select{
+    margin-right: 5px;
+}

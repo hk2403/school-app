@@ -18,4 +18,10 @@ export class StudentsService {
   deleteStudent(id:any):Observable<any>{
     return this._httpClient.delete(this.url+id);
   }
+  getFilteredStudents(term:any):Observable<any>{
+    return this._httpClient.get(this.url+"?filter="+term)
+  }
+  getSortedStudents(column:any,order:any):Observable<any>{
+    return this._httpClient.get(this.url+"?sortBy="+column+"&order="+order);
+  }
 }

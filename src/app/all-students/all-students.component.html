@@ -1,5 +1,26 @@
 <div class="parent">
     <h1>Students Data</h1>
+    <div class="act row">
+        <div class="col-lg-3 col-sm-12 mm">
+            <input type="search" class="form-control" placeholder="Search..." [(ngModel)]="term" (keyup)="getFilteredStudents()">
+        </div>
+        <div class="col-lg-4 col-sm-12 ff mm">
+            <select class="form-select" [(ngModel)]="column">
+                <option value="id" selected="selected">ID</option>
+                <option value="name">Name</option>
+                <option value="gender">Gender</option>
+                <option value="class">Class</option>
+              </select>
+              <select class="form-select" [(ngModel)]="order">
+                <option>Asc</option>
+                <option>Desc</option>
+              </select>
+              <button class="btn btn-warning" (click)="getSortedStudents()">Sort</button>
+        </div>
+        <div class="col-lg-3 col-sm-12 mm">
+
+        </div>
+    </div>
     <div class="tbl table-responsive table-bordered table-striped">
         <table class="table">
             <tr>
@@ -12,7 +33,7 @@
                 <th>Class</th>
                 <th>Percentage</th>
                 <th>Type</th>
-                <th>Actions</th>  
+                <th class="actions">Actions</th>  
             </tr>
             <tr *ngFor="let student of students">
                 <td>{{student.id}}</td>
