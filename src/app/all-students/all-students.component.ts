@@ -13,6 +13,8 @@ export class AllStudentsComponent {
   public term:any="";
   public column:string="";
   public order:string="";
+  public limit:number=0;
+  public page:number=0;
   constructor(private _studentsService:StudentsService){
     _studentsService.getStudents().subscribe(
       (data:any)=>{
@@ -45,6 +47,16 @@ export class AllStudentsComponent {
   }
   getSortedStudents(){
     this._studentsService.getSortedStudents(this.column, this.column).subscribe(
+      (data:any)=>{
+        this.students=data;
+      },
+      (err:any)=>{
+        alert("Internal Service Error");
+      }
+    )
+  }
+  getPagedStudents(){
+    this._studentsService.getPagedStudents(this.limit,this.page).subscribe(
       (data:any)=>{
         this.students=data;
       },

@@ -23,11 +23,15 @@
         background-color: white;
         color: black;
     }
+    
 
 }
 
 .tbl {
     text-align: center;
+}
+button{
+    width: 70px;
 }
 .actions{
     padding: 12px;

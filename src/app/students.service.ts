@@ -24,4 +24,7 @@ export class StudentsService {
   getSortedStudents(column:any,order:any):Observable<any>{
     return this._httpClient.get(this.url+"?sortBy="+column+"&order="+order);
   }
+  getPagedStudents(limit:any,page:any):Observable<any>{
+    return this._httpClient.get(this.url+"?limit="+limit+"&page="+page);
+  }
 }
