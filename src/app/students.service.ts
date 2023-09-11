@@ -16,7 +16,7 @@ export class StudentsService {
     return this._httpClient.post(this.url,data);
   }
   deleteStudent(id:number):Observable<any>{
-    return this._httpClient.delete(this.url+id);
+    return this._httpClient.delete(this.url+"/"+id);
   }
   getFilteredStudents(term:any):Observable<any>{
     return this._httpClient.get(this.url+"?filter="+term)
