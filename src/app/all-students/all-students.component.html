@@ -56,7 +56,7 @@
                 <td>{{student.email}}</td>
                 <td>{{student.dob}}</td>
                 <td>{{student.class}}</td>
-                <td>{{student.percentage}}</td>
+                <td [ngStyle]="{color:student.percentage<35?'red':'green'}">{{student.percentage}}</td>
                 <td>{{student.type}}</td>
                 <td>
                     <button (click)="deleteStudent(student.id)" class="btn btn-danger">Delete</button>
