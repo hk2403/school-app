@@ -12,6 +12,8 @@
         padding-top: 30px;
         text-align: center;
         color: white;
+        position: sticky;
+        top: 0;
 
     }
 
@@ -30,6 +32,7 @@
         width: 78%;
         background-color: rgb(99, 78, 220, 0.3);
         overflow: auto;
+      
     }
 
     h4 {
