@@ -24,6 +24,7 @@ export class AllStudentsComponent {
         alert("Internal Service Error");
       }
     )
+    
   }
   deleteStudent(id:number){
     this._studentsService.deleteStudent(id).subscribe(
