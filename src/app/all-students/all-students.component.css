@@ -48,6 +48,7 @@ select{
 }
 tr>th:first-child,tr>td:first-child{
     position: sticky;
+    z-index: 1;
     left: 0;
   }
   tr:first-child{
