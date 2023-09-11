@@ -23,7 +23,7 @@ export class AllStudentsComponent {
       }
     )
   }
-  deleteStudent(id:any){
+  deleteStudent(id:number){
     this._studentsService.deleteStudent(id).subscribe(
       (data:any)=>{
         alert("Deleted Successfully");

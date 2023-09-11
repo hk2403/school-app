@@ -9,5 +9,6 @@ export class HomeComponent {
   public quotes:string[]=[
   " The man who does not read books has no advantage over the one who cannot read them. — Mark Twain."
   ]
+  public datetime:any=new Date();
 
 }

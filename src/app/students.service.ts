@@ -15,7 +15,7 @@ export class StudentsService {
   createStudent(data:any):Observable<any>{
     return this._httpClient.post(this.url,data);
   }
-  deleteStudent(id:any):Observable<any>{
+  deleteStudent(id:number):Observable<any>{
     return this._httpClient.delete(this.url+id);
   }
   getFilteredStudents(term:any):Observable<any>{

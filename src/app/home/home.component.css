@@ -1,33 +1,82 @@
+@media screen and (max-width:572px) {
+    .top{
+        
+       
+        height: 35%;
+        width: 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card-1, .card-2, .card-3{
+       height: 30%;
+        width: 95%;
+        border-radius: 10px;
+        background-color: rgb(84, 32, 124,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .middle{
+        display: flex;
+        justify-content: space-evenly;
+        height: 40%;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .card-4, .card-5{
+        height:100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(124, 32, 99, 0.7);
+    }
+    
+    
+}
+
 .parent{
     height: 100%;
 }
-.top{
-    display: flex;
-    justify-content: space-evenly;
-    height: 35%;
-    width: 100%;
-    padding-top: 50px;
-}
-.card-1, .card-2, .card-3{
-    height: 95%;
-    width: 30%;
-    border-radius: 10px;
-    background-color: rgb(84, 32, 124,0.7);
+@media screen and (min-width:572px) {
+    .top{
+        display: flex;
+        justify-content: space-evenly;
+        height: 35%;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .card-1, .card-2, .card-3{
+        height: 95%;
+        width: 30%;
+        border-radius: 10px;
+        background-color: rgb(84, 32, 124,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+    }
+    
+    .middle{
+        display: flex;
+        justify-content: space-evenly;
+        height: 40%;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .card-4, .card-5{
+        height: 95%;
+        width: 46.5%;
+        border-radius: 10px;
+        background-color: rgba(124, 32, 99, 0.7);
+    }
 }
 
-.middle{
-    display: flex;
-    justify-content: space-evenly;
-    height: 40%;
-    width: 100%;
-    padding-top: 20px;
-}
-.card-4, .card-5{
-    height: 95%;
-    width: 46.5%;
-    border-radius: 10px;
-    background-color: rgba(124, 32, 99, 0.7);
-}
 
 .bottom{
     height: 20%;
