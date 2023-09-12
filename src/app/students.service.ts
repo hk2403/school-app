@@ -12,6 +12,9 @@ export class StudentsService {
   getStudents():Observable<any>{
     return this._httpClient.get(this.url);
   }
+  getStudent(id:number):Observable<any>{
+    return this._httpClient.get(this.url+"/"+id);
+  }
   createStudent(data:any):Observable<any>{
     return this._httpClient.post(this.url,data);
   }

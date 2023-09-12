@@ -1,1 +1,51 @@
-<p>student-details works!</p>
+
+
+<div class="parent">
+    <div class="child">
+        <table class="table table-borderless">
+            <tr>
+                <th colspan="2">Student Details</th>
+            </tr>
+            <tr>
+                <td>Student ID</td>
+                <td>{{student.id}}</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{student.name}}</td>
+            </tr>
+            <tr>
+                <td>Father Name</td>
+                <td>{{student.fatherName}}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>{{student.gender}}</td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>{{student.dob | date:'mediumDate'}}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>{{student.email}}</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>{{student.class}}</td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td>{{student.percentage}}</td>
+            </tr>
+            <tr>
+                <td>Conduct</td>
+                <td>{{student.conduct}}</td>
+            </tr>
+            <tr>
+                <td colspan="2"><button routerLink="/dashboard/allStudents" class="btn btn-primary">Back</button></td>
+            </tr>
+        </table>
+
+    </div>
+</div>

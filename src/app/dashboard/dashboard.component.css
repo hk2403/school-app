@@ -52,6 +52,8 @@
 @media screen and (max-width:572px) {
     .parent {
         width: 100%;
+        
+        
 
     }
 
@@ -67,6 +69,7 @@
     .right {
         width: 100%;
         background-color: rgb(99, 78, 220, 0.3);
+        
     }
 
     .lgt {

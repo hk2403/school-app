@@ -14,7 +14,7 @@ const routes: Routes = [
     {path:"home", component:HomeComponent},
     {path:"createStudent", component:CreateStudentComponent},
     {path:"allStudents", component:AllStudentsComponent},
-    {path:"studentDetails", component:StudentDetailsComponent},
+    {path:"studentDetails/:id", component:StudentDetailsComponent},
     {path:"", component:HomeComponent}
   ]},
   
