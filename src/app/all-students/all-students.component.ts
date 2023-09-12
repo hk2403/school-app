@@ -14,8 +14,8 @@ export class AllStudentsComponent {
   public term:any="";
   public column:string="";
   public order:string="";
-  public limit:number=0;
-  public page:number=0;
+  public limit:any="";
+  public page:any="";
   constructor(private _studentsService:StudentsService, private _router:Router){
     _studentsService.getStudents().subscribe(
       (data:any)=>{
