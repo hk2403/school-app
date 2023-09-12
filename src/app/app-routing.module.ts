@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { AllStudentsComponent } from './all-students/all-students.component';
 import { authenticationGuard } from './authentication.guard';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
     {path:"home", component:HomeComponent},
     {path:"createStudent", component:CreateStudentComponent},
     {path:"allStudents", component:AllStudentsComponent},
+    {path:"studentDetails", component:StudentDetailsComponent},
     {path:"", component:HomeComponent}
   ]},
   

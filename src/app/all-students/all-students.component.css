@@ -35,7 +35,8 @@
     text-align: center;
 }
 button{
-    width: 70px;
+    width: 60px;
+    
 }
 .actions{
     padding: 12px;
@@ -66,6 +67,9 @@ tr>th:first-child,tr>td:first-child{
   
   tr:nth-child(odd) td {
      background: white;
+  }
+  .actn{
+    margin: 10px;
   }
   
   /* tr:nth-child(even) td {
