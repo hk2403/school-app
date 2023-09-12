@@ -58,6 +58,7 @@ tr>th:first-child,tr>td:first-child{
     position: sticky;
     z-index: 1;
     left: 0;
+    background-color: white;
   }
   tr:first-child{
     position: sticky;
@@ -67,6 +68,6 @@ tr>th:first-child,tr>td:first-child{
      background: white;
   }
   
-  tr:nth-child(even) td {
-     background: white;
-  }
+  /* tr:nth-child(even) td {
+     background: gray;
+  } */
