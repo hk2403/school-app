@@ -11,6 +11,7 @@ import { AllStudentsComponent } from './all-students/all-students.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { MessageAppComponent } from './message-app/message-app.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     HomeComponent,
     CreateStudentComponent,
     AllStudentsComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    MessageAppComponent
   ],
   imports: [
     BrowserModule,

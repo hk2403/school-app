@@ -1,0 +1,24 @@
+<div class="parent">
+    <div class="header">
+        <h2>Messages</h2>
+
+    </div>
+    <div class="search-block">
+        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" (keyup)="getFilteredUsers()">
+
+    </div>
+    <div class="showMsgs">
+        <div class="userCard" *ngFor="let u of users.results">
+            <div class="pic">
+                <img src="{{u.picture.medium}}" alt="" class="dp" height="60px" width="60px">
+            </div>
+            <div class="details">
+                <p class="name">{{u.name.first}} {{u.name.last}}</p>
+                <p class="num">{{u.cell}}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

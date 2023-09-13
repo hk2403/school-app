@@ -7,6 +7,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { AllStudentsComponent } from './all-students/all-students.component';
 import { authenticationGuard } from './authentication.guard';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { MessageAppComponent } from './message-app/message-app.component';
 
 const routes: Routes = [
   {path:"login",component:LoginComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
     {path:"studentDetails/:id", component:StudentDetailsComponent},
     {path:"", component:HomeComponent}
   ]},
+  {path:"messageApp", component:MessageAppComponent},
   
   {path:"",component:LoginComponent}
   
