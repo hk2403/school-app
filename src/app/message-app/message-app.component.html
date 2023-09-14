@@ -8,8 +8,7 @@
 
     </div>
     <div class="search-block">
-        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term"
-            (keydown)="getFilteredUsers()">
+        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" (input)="getFilteredUsers()">
 
     </div>
 

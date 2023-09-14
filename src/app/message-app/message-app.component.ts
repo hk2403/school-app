@@ -8,28 +8,37 @@ import { Router } from '@angular/router';
   styleUrls: ['./message-app.component.css']
 })
 export class MessageAppComponent {
-  public term:any="";
-  public users:any=[];
-  
-  constructor(private _randomUsersService:RandomUsersService, private _router:Router){
+  public term: any = "";
+  public users: any = [];
+
+  constructor(private _randomUsersService: RandomUsersService, private _router: Router) {
     _randomUsersService.getUsers().subscribe(
-      (data:any)=>{
-        this.users=data;
+      (data: any) => {
+        this.users = data;
       },
-      (err:any)=>{
+      (err: any) => {
         alert("Error!");
       }
     )
   }
 
-  getFilteredUsers(){
-    this.users.results=this.users.results.filter(
-      (value:any)=>value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
-      );
-      console.log(this.users);
-      
-      
-  }
+  getFilteredUsers() {
+    this.users.results = this.users.results.filter(
+      (value: any) => value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
+    );
+    console.log(this.users);
 
+    // const filteredResults = this.users.results.filter(
+    //   (value: any) =>
+    //     value.name.first.toLowerCase().includes(this.term.toLowerCase()) ||
+    //     value.name.last.toLowerCase().includes(this.term.toLowerCase())
+    // );
+  
+    // // Update the user's results with the filtered results
+    // this.users.results = filteredResults;
+
+
+  }
+  
 
 }
