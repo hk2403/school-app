@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class MessageAppComponent {
   public term:any="";
   public users:any=[];
+  
   constructor(private _randomUsersService:RandomUsersService, private _router:Router){
     _randomUsersService.getUsers().subscribe(
       (data:any)=>{
@@ -25,6 +26,10 @@ export class MessageAppComponent {
     this.users.results=this.users.results.filter(
       (value:any)=>value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
       );
+      console.log(this.users);
+      
+      
   }
+
 
 }
