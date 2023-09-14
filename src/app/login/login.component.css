@@ -46,7 +46,7 @@ button{
     width: min(400px,90%);
     z-index: 1;
     height: 300px;
-    background: rgba(218, 236, 98, 0.4);
+    background: rgba(218, 236, 98,0.4);
     border-radius: 20px;
     padding: 20px;
     border: 2px solid blueviolet;

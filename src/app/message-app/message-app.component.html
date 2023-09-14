@@ -8,7 +8,7 @@
 
     </div>
     <div class="search-block">
-        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" (input)="getFilteredUsers()">
+        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" >
 
     </div>
 
@@ -16,7 +16,7 @@
     <div class="showMsgs">
 
         <ng-container *ngIf="users.results.length > 0; else noRecords">
-            <div class="userCard" *ngFor="let u of users.results">
+            <div class="userCard" *ngFor="let u of users.results | userFilter:term">
                 <div class="pic">
                     <img src="{{ u.picture.medium }}" alt="" class="dp" height="60px" width="60px">
                 </div>

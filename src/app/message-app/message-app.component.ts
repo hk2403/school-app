@@ -22,23 +22,23 @@ export class MessageAppComponent {
     )
   }
 
-  getFilteredUsers() {
-    this.users.results = this.users.results.filter(
-      (value: any) => value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
-    );
-    console.log(this.users);
+  // getFilteredUsers() {
+  //   this.users.results = this.users.results.filter(
+  //     (value: any) => value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
+  //   );
+  //   console.log(this.users);
 
-    // const filteredResults = this.users.results.filter(
-    //   (value: any) =>
-    //     value.name.first.toLowerCase().includes(this.term.toLowerCase()) ||
-    //     value.name.last.toLowerCase().includes(this.term.toLowerCase())
-    // );
+  //   const filteredResults = this.users.results.filter(
+  //     (value: any) =>
+  //       value.name.first.toLowerCase().includes(this.term.toLowerCase()) ||
+  //       value.name.last.toLowerCase().includes(this.term.toLowerCase())
+  //   );
   
-    // // Update the user's results with the filtered results
-    // this.users.results = filteredResults;
+  //   // Update the user's results with the filtered results
+  //   this.users.results = filteredResults;
 
 
-  }
+  // }
   
 
 }

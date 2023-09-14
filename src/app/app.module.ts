@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { MessageAppComponent } from './message-app/message-app.component';
+import { UserFilterPipe } from './user-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessageAppComponent } from './message-app/message-app.component';
     CreateStudentComponent,
     AllStudentsComponent,
     StudentDetailsComponent,
-    MessageAppComponent
+    MessageAppComponent,
+    UserFilterPipe
   ],
   imports: [
     BrowserModule,
