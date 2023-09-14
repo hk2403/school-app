@@ -22,14 +22,9 @@ export class MessageAppComponent {
   }
 
   getFilteredUsers(){
-    this._randomUsersService.getFilteredUsers(this.term).subscribe(
-      (data:any)=>{
-        this.users=data;
-      },
-      (err:any)=>{
-        alert("Internal Service Error");
-      }
-    )
+    this.users.results=this.users.results.filter(
+      (value:any)=>value.name.first.toLowerCase().includes(this.term.toLowerCase()) || value.name.last.toLowerCase().includes(this.term.toLowerCase())
+      );
   }
 
 }

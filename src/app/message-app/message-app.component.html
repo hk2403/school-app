@@ -4,10 +4,12 @@
 
     </div>
     <div class="search-block">
-        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" (keyup)="getFilteredUsers()">
+        <input type="search" class="search" placeholder="Search People" [(ngModel)]="term" (keydown)="getFilteredUsers()">
 
     </div>
+   
     <div class="showMsgs">
+        
         <div class="userCard" *ngFor="let u of users.results">
             <div class="pic">
                 <img src="{{u.picture.medium}}" alt="" class="dp" height="60px" width="60px">

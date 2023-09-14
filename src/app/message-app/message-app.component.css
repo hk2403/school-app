@@ -1,5 +1,9 @@
 .parent{
     width: 100%;
+    height: 100vh;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: auto;
     
 }
 .header{
@@ -9,6 +13,7 @@
     padding-top: 28px;
     padding-left: 20px;
     color: white;
+    
 }
 .search-block{
     display: flex;
@@ -17,10 +22,13 @@
     width: 100%;
     height: 60px;
     background-color: rgb(245, 235, 224);
+    
+    
 }
 .search{
     width: 90%;
     padding-left: 10px;
+    padding-right: 15px;
     border-radius: 20px;
     font-size: 16px;
     padding-top: 5px;
