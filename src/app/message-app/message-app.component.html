@@ -14,8 +14,26 @@
 
 
     <div class="showMsgs">
+        <div *ngIf="(users.results | userFilter:term) as filteredUsers">
+            <ng-container *ngIf="filteredUsers.length > 0; else noRecords">
+                <div class="userCard" *ngFor="let u of filteredUsers">
+                    <!-- Your user card template -->
+                    <div class="pic">
+                        <img src="{{ u.picture.medium }}" alt="" class="dp" height="60px" width="60px">
+                    </div>
+                    <div class="details">
+                        <p class="name">{{ u.name.first }} {{ u.name.last }}</p>
+                        <p class="num">{{ u.cell }}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <ng-template #noRecords>
+            <div class="no-records">No Records</div>
+        </ng-template>
 
-        <ng-container *ngIf="users.results.length > 0; else noRecords">
+         <!-- No records not working using below code 
+            <ng-container *ngIf="users.results; else noRecords">
             <div class="userCard" *ngFor="let u of users.results | userFilter:term">
                 <div class="pic">
                     <img src="{{ u.picture.medium }}" alt="" class="dp" height="60px" width="60px">
@@ -27,23 +45,9 @@
             </div>
         </ng-container>
         <ng-template #noRecords>
-            <div class="no-records">No Records</div>
-        </ng-template>
+            <div class="no-records">No People</div>
+        </ng-template> -->
 
 
-
-        <!-- <div class="userCard" *ngFor="let u of users.results">
-            
-            <div class="pic">
-                <img src="{{u.picture.medium}}" alt="" class="dp" height="60px" width="60px">
-            </div>
-            <div class="details">
-                <p class="name">{{u.name.first}} {{u.name.last}}</p>
-                <p class="num">{{u.cell}}</p>
-            </div>
-
-        </div>
-
-    </div> -->
 
     </div>
